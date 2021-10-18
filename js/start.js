@@ -17,7 +17,7 @@ function calculation() {
 function setResult(){
   calculation();
   var cnt = 0;
-  for(let i = 3; i >= 0; i--){
+  for(let i = 0; i < 4 ; i++){
     cnt <<= 1;
     if(mbti[i]>0) cnt++;
   }
