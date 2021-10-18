@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang=ko dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- sns share -->
+    <meta property="og:url" content="https://cbkpar-mbti.netlify.app" />
+    <meta property="og:title" content="메이플몬스터 MBTI" />
+    <meta property="og:type" content="website" />
+    <meta property="og:image" content="img/share.png" />
+    <meta property="og:description" content="재미로 알아보는 몬스터 유형" />
+
+    <!-- favicon -->
+    <link rel="shortcut icon" href="img/favicon.ico">
+    <link rel="apple-touch-icon-precomposed" href="img/favicon.ico">
+
+    <title>메이플 몬스터 MBTI</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <link href="./css/default.css" rel="stylesheet">
+    <link href="./css/main.css" rel="stylesheet">
+    <link href="./css/qna.css" rel="stylesheet">
+    <link href="./css/result.css" rel="stylesheet">
+    <link href="./css/animation.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Jua&display=swap" rel="stylesheet">
+    <script src="https://developers.kakao.com/sdk/js/kakao.js"></script>
+    <script>
+      Kakao.init('819965e27595c5b3ef9c179cbebe1d1b');
+      Kakao.isInitialized();
+    </script>
+  </head>
+  <body>
+    <div class="container">
+      <section id="main" class="mx-auto mt-5 py-4 px-3">
+        <h1>내가 메이플 몬스터라면?</h1>
+        <div class="col-sm-6 col-7 mx-auto">
+          <img src="./img/main.png" alt="mainImage" class="img-fluid">
+        </div>
+        <p>
+          자아 찾으러 가기
+        </p>
+        <div class="col-6 col-lg-12 col-md-8 col-sm-6 mx-auto">
+          <button type="button" onclick="js:begin()" class="btn btn-primary mt-3">시작하기</button>
+        </div>
+      </section>
+      <section id="qna">
+        <div class="status mx-auto mt-4">
+          <div class="statusBar"></div>
+        </div>
+        <div class="qBox mt-4 mb-5 py-3 mx-auto"></div>
+        <div class="answerBox"></div>
+      </section>
+      <section id="result" class="mx-auto mt-5 py-4 px-3">
+        <h1>나랑 비슷한 몬스터</h1>
+        <div class="resultname"></div>
+        <div id="resultImg" class="my-3 col-6 col-lg-12 col-md-8 col-sm-6 mx-auto"></div>
+        <div class="resulttext"></div>
+        <button type="button" name="button" class="kakao mt-3 btn btn-warning mt-3" onclick="js:setShare()">공유하기</button>
+        <button type="button" name="button" class="replay mt-3 btn btn-warning mt-3" onclick="js:restart()">다시하기</button>
+      </section>
+    </div>
+    <script src="./js/data.js" charset="utf-8"></script>
+    <script src="./js/start.js" charset="utf-8"></script>
+    <script src="./js/share.js" charset="utf-8"></script>
+    </body>
+</html>

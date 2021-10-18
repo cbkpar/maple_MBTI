@@ -1,0 +1,14 @@
+#main{
+  background-color: whitesmoke;
+  width: 80%;
+  text-align: center;
+  border-radius: 20px;
+}
+
+p {
+  font-size: 1.15rem;
+}
+
+h1 {
+  font-size: 1.4rem;
+}

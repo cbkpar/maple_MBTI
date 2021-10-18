@@ -1,0 +1,30 @@
+#result {
+  display: none;
+  background-color: whitesmoke;
+  width: 80%;
+  text-align: center;
+  border-radius: 20px;
+}
+
+#shareResult {
+  background-color: whitesmoke;
+  width: 80%;
+  text-align: center;
+  border-radius: 20px;
+}
+
+.resultname {
+  font-size: 1.4rem;
+}
+
+.resulttext {
+  font-size: 1.15rem;
+}
+
+.kakao:hover {
+  opacity: 0.85;
+}
+
+.kakao.focus {
+  opacity: 0.7;
+}
